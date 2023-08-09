@@ -8,6 +8,11 @@ const App = () => {
   return (
     <Router>
       <div>
+        <img
+          src="recipe-app/src/Images/Recipes-Banner.jpg"
+          className="banner"
+          alt="Recipies banner"
+        />
         <Routes>
           <Route exact path="/" element={<RecipesList />} />
           <Route path="/recipe/:id" element={<RecipeDetail />} />
